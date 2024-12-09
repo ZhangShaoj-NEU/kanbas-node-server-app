@@ -31,6 +31,8 @@ if (process.env.NODE_ENV !== "development") {
   };
 }
 app.use(session(sessionOptions));
+console.log("CORS Origin:", process.env.NETLIFY_URL || "https://meek-moonbeam-577330.netlify.app");
+console.log("Session Options:", sessionOptions);
 
    
 app.use(express.json());
