@@ -14,7 +14,7 @@ const app = express();
 app.use(
   cors({
     credentials: true,
-    origin: process.env.NETLIFY_URL || "https://meek-moonbeam-577330.netlify.app/",
+    origin: process.env.NETLIFY_URL || "https://meek-moonbeam-577330.netlify.app",
   })
 );
 const sessionOptions = {
